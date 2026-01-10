@@ -1,0 +1,40 @@
+/* src/styles/global.css */
+:root {
+  /* Color Palette */
+  --matte-black: #0A0A0A;
+  --charcoal: #1A1A1A;
+  --charcoal-light: #2A2A2A;
+  --bronze: #CD7F32;
+  --bronze-dim: rgba(205, 127, 50, 0.2);
+  --white: #FFFFFF;
+  --gray: #888888;
+
+  /* Typography */
+  --font-display: 'Inter', system-ui, sans-serif;
+  --font-body: 'Inter', system-ui, sans-serif;
+
+  /* Spacing */
+  --spacing-unit: 0.25rem;
+
+  /* Transitions */
+  --transition-fast: 200ms ease-in-out;
+  --transition-medium: 400ms ease-in-out;
+}
+body {
+  background: var(--matte-black);
+  color: var(--white);
+  font-family: var(--font-body);
+  line-height: 1.6;
+}
+/* Typography Hierarchy */
+h1 { font-size: 3rem; font-weight: 700; line-height: 1.1; }
+h2 { font-size: 2rem; font-weight: 600; line-height: 1.2; }
+h3 { font-size: 1.5rem; font-weight: 600; line-height: 1.3; }
+h4 { font-size: 1.25rem; font-weight: 500; line-height: 1.4; }
+/* Micro-interactions */
+.hover-lift {
+  transition: transform var(--transition-fast);
+}
+.hover-lift:hover {
+  transform: translateY(-2px);
+}
