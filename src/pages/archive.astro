@@ -1,0 +1,43 @@
+---
+// src/pages/archive.astro
+import Archive from '../layouts/Archive.astro';
+import ContentCard from '../components/ContentCard.astro';
+
+// Placeholder content - replace with actual content collection when ready
+const archiveItems = [
+  {
+    title: "The Skittlez Arc",
+    excerpt: "A comprehensive narrative exploring themes of identity, struggle, and transformation through the lens of lived experience.",
+    category: "archive",
+    date: "2025-01-01",
+    slug: "the-skittlez-arc"
+  },
+  {
+    title: "Emily Saga",
+    excerpt: "An in-depth examination of relational dynamics, psychological warfare, and the complexities of human connection.",
+    category: "archive",
+    date: "2025-01-02",
+    slug: "emily-saga"
+  },
+  {
+    title: "Doctrinal Sermons",
+    excerpt: "Collected teachings and philosophical reflections from the concrete streets of lived wisdom.",
+    category: "archive",
+    date: "2025-01-03",
+    slug: "doctrinal-sermons"
+  }
+];
+---
+
+<Archive title="Archive - RyanrealAF">
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+    {archiveItems.map(item => (
+      <ContentCard {...item} />
+    ))}
+  </div>
+
+  <div class="mt-16 text-center">
+    <p class="text-gray-400 mb-4">More content coming soon as the archive grows...</p>
+    <a href="/" class="text-bronze hover:text-white transition-colors">← Back to Command Center</a>
+  </div>
+</Archive>

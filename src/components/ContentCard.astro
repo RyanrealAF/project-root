@@ -1,0 +1,12 @@
+---
+// src/components/ContentCard.astro
+const { title, excerpt, category, date, slug } = Astro.props;
+---
+<article class="bg-charcoal border border-bronze/20 p-6 hover:border-bronze transition-all duration-200 hover-lift">
+  <div class="text-xs text-bronze uppercase tracking-wider mb-2">{category}</div>
+  <h3 class="text-xl font-bold text-white mb-2">{title}</h3>
+  <p class="text-gray-400 text-sm mb-4">{excerpt}</p>
+  <a href={`/${category}/${slug}`} class="text-bronze hover:text-white transition-colors">
+    Read →
+  </a>
+</article>

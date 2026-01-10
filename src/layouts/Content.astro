@@ -1,0 +1,11 @@
+---
+// src/layouts/Content.astro
+import Base from './Base.astro';
+const { title, contentTitle } = Astro.props;
+---
+<Base title={title}>
+  <DoctrineHeader title={contentTitle} />
+  <div class="container mx-auto px-4 py-16">
+    <slot />
+  </div>
+</Base>

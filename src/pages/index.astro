@@ -1,16 +1,65 @@
 ---
-
+// src/pages/index.astro
+import Base from '../layouts/Base.astro';
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<Base title="RyanrealAF - Digital Command Center">
+  <section class="hero bg-matte-black py-24">
+    <div class="container mx-auto px-4 text-center">
+      <h1 class="text-5xl md:text-7xl font-bold text-white mb-6">
+        Ryan<span class="text-bronze">real</span>AF
+      </h1>
+      <p class="text-xl text-gray-400 mb-8 max-w-2xl mx-auto">
+        Building while bleeding. Raw doctrine, lived experience, and intellectual rigor in the digital age.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="/identity" class="bg-bronze text-matte-black px-8 py-3 font-semibold hover:bg-white transition-colors">
+          Enter Doctrine
+        </a>
+        <a href="/archive" class="border border-bronze text-bronze px-8 py-3 hover:bg-bronze hover:text-matte-black transition-all">
+          View Archive
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-16 bg-charcoal">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold text-white mb-12 text-center">Command Center</h2>
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div class="text-center">
+          <div class="w-16 h-16 bg-bronze/10 border border-bronze/20 rounded-lg flex items-center justify-center mx-auto mb-4">
+            <span class="text-bronze text-2xl">>à</span>
+          </div>
+          <h3 class="text-lg font-semibold text-white mb-2">Identity</h3>
+          <p class="text-gray-400 text-sm">Core philosophy and mission</p>
+          <a href="/identity" class="text-bronze hover:text-white transition-colors">Explore ’</a>
+        </div>
+        <div class="text-center">
+          <div class="w-16 h-16 bg-bronze/10 border border-bronze/20 rounded-lg flex items-center justify-center mx-auto mb-4">
+            <span class="text-bronze text-2xl">=Ú</span>
+          </div>
+          <h3 class="text-lg font-semibold text-white mb-2">Archive</h3>
+          <p class="text-gray-400 text-sm">Completed works and discography</p>
+          <a href="/archive" class="text-bronze hover:text-white transition-colors">Explore ’</a>
+        </div>
+        <div class="text-center">
+          <div class="w-16 h-16 bg-bronze/10 border border-bronze/20 rounded-lg flex items-center justify-center mx-auto mb-4">
+            <span class="text-bronze text-2xl"><“</span>
+          </div>
+          <h3 class="text-lg font-semibold text-white mb-2">Curriculum</h3>
+          <p class="text-gray-400 text-sm">Teaching modules and frameworks</p>
+          <a href="/curriculum" class="text-bronze hover:text-white transition-colors">Explore ’</a>
+        </div>
+        <div class="text-center">
+          <div class="w-16 h-16 bg-bronze/10 border border-bronze/20 rounded-lg flex items-center justify-center mx-auto mb-4">
+            <span class="text-bronze text-2xl">¡</span>
+          </div>
+          <h3 class="text-lg font-semibold text-white mb-2">Dispatch</h3>
+          <p class="text-gray-400 text-sm">Current updates and commentary</p>
+          <a href="/dispatch" class="text-bronze hover:text-white transition-colors">Explore ’</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</Base>

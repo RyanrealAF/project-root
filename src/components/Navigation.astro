@@ -1,0 +1,71 @@
+---
+// src/components/Navigation.astro
+const navItems = [
+  { name: 'Identity', path: '/identity' },
+  { name: 'Archive', path: '/archive' },
+  { name: 'Curriculum', path: '/curriculum' },
+  { name: 'Doctrine', path: '/doctrine' },
+  { name: 'Dispatch', path: '/dispatch' },
+];
+const currentPath = Astro.url.pathname;
+---
+<nav class="border-b border-bronze/20 bg-charcoal">
+  <div class="container mx-auto px-4">
+    <div class="flex items-center justify-between py-4">
+      <a href="/" class="text-xl font-bold text-bronze hover-lift">
+        RyanrealAF
+      </a>
+      <ul class="hidden md:flex gap-6">
+        {navItems.map(item => (
+          <li>
+            <a
+              href={item.path}
+              class={`text-sm uppercase tracking-wider transition-colors duration-fast
+                ${currentPath.startsWith(item.path)
+                  ? 'text-bronze'
+                  : 'text-gray-400 hover:text-white'}`}
+            >
+              {item.name}
+            </a>
+          </li>
+        ))}
+      </ul>
+      <!-- Mobile menu button -->
+      <button id="mobile-menu-button" class="md:hidden text-white" aria-label="Toggle menu">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
+    </div>
+    <!-- Mobile menu -->
+    <div id="mobile-menu" class="hidden md:hidden pb-4">
+      <ul class="flex flex-col gap-4">
+        {navItems.map(item => (
+          <li>
+            <a
+              href={item.path}
+              class={`text-sm uppercase tracking-wider transition-colors duration-fast
+                ${currentPath.startsWith(item.path)
+                  ? 'text-bronze'
+                  : 'text-gray-400 hover:text-white'}`}
+            >
+              {item.name}
+            </a>
+          </li>
+        ))}
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<script>
+  // Mobile menu toggle
+  const menuButton = document.getElementById('mobile-menu-button');
+  const mobileMenu = document.getElementById('mobile-menu');
+
+  if (menuButton && mobileMenu) {
+    menuButton.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  }
+</script>

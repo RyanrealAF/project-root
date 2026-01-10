@@ -1,0 +1,69 @@
+---
+// src/pages/identity.astro
+import { getCollection } from 'astro:content';
+import Content from '../layouts/Content.astro';
+import ContentCard from '../components/ContentCard.astro';
+
+const identityContent = await getCollection('identity');
+---
+
+<Content title="Identity - RyanrealAF" contentTitle="Identity">
+  <div class="prose prose-lg prose-invert max-w-none">
+    <p class="text-xl text-gray-300 mb-8">
+      Core philosophy, mission, and the foundational principles that drive everything.
+    </p>
+
+    <div class="bg-charcoal-light p-8 rounded-lg border border-bronze/20 mb-8">
+      <h2 class="text-2xl font-bold text-white mb-4">The Mission</h2>
+      <p class="text-gray-300 mb-4">
+        To build digital monuments to lived experience and intellectual rigor. To present raw doctrine
+        without dilution, serving the work rather than ego-driven development.
+      </p>
+      <p class="text-gray-300">
+        Every line of code must serve the work, load in under 2 seconds on 4G mobile,
+        score 95+ on Lighthouse, and scale seamlessly as the archive grows.
+      </p>
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-8 mb-12">
+      <div class="bg-charcoal-light p-6 rounded-lg border border-bronze/20">
+        <h3 class="text-xl font-semibold text-bronze mb-3">Core Principles</h3>
+        <ul class="text-gray-300 space-y-2">
+          <li>• Modular architecture</li>
+          <li>• Markdown-first content</li>
+          <li>• Doctrine-aligned aesthetics</li>
+          <li>• Performance-obsessed</li>
+          <li>• Free-tier compatible</li>
+        </ul>
+      </div>
+
+      <div class="bg-charcoal-light p-6 rounded-lg border border-bronze/20">
+        <h3 class="text-xl font-semibold text-bronze mb-3">Current Focus</h3>
+        <ul class="text-gray-300 space-y-2">
+          <li>• Building while bleeding</li>
+          <li>• Raw lived experience</li>
+          <li>• Intellectual rigor</li>
+          <li>• Digital preservation</li>
+          <li>• Community building</li>
+        </ul>
+      </div>
+    </div>
+
+    {identityContent.length > 0 && (
+      <div>
+        <h2 class="text-3xl font-bold text-white mb-8">Identity Content</h2>
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {identityContent.map(item => (
+            <ContentCard
+              title={item.data.title}
+              excerpt={item.data.excerpt}
+              category={item.data.category}
+              date={item.data.date}
+              slug={item.slug}
+            />
+          ))}
+        </div>
+      </div>
+    )}
+  </div>
+</Content>
