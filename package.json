@@ -1,16 +1,22 @@
 {
-  "name": "project-root",
+  "name": "ryanrealaf-master-doctrine",
   "type": "module",
-  "version": "0.0.1",
+  "version": "1.0.0",
+  "description": "Unified digital monument to lived experience and intellectual rigor",
   "scripts": {
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "clean": "rm -rf dist node_modules/.astro",
+    "deploy": "npm run build && echo 'Ready for Cloudflare deployment'"
   },
   "dependencies": {
     "astro": "^5.16.8",
     "@astrojs/tailwind": "^6.0.2",
     "tailwindcss": "^3.4.19"
-  }
+  },
+  "keywords": ["doctrine", "archive", "curriculum", "ryanrealaf", "dark-elegance"],
+  "author": "RyanrealAF",
+  "license": "UNLICENSED"
 }

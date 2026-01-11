@@ -1,0 +1,51 @@
+---
+import Layout from '../layouts/Base.astro';
+import { getCollection } from 'astro:content';
+
+// Get all doctrine content
+const doctrineContent = await getCollection('doctrine');
+const archiveContent = await getCollection('archive');
+---
+
+<Layout title="Doctrine Archive">
+  <div class="container mx-auto px-4 py-8">
+    <div class="mb-12">
+      <h1 class="text-4xl font-bold text-bronze mb-4">Doctrine Archive</h1>
+      <p class="text-gray-400 text-lg">Master collection of psychological warfare doctrine and tactical archives</p>
+    </div>
+
+    <!-- Doctrine Section -->
+    <section class="mb-12">
+      <h2 class="text-2xl font-bold text-white mb-6 border-b border-bronze/20 pb-2">Core Doctrine</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {doctrineContent.map(item => (
+          <article class="bg-charcoal border border-bronze/20 p-6 hover:border-bronze transition-all duration-200">
+            <div class="text-xs text-bronze uppercase tracking-wider mb-2">Doctrine</div>
+            <h3 class="text-xl font-bold text-white mb-2">{item.data.title}</h3>
+            <p class="text-gray-400 text-sm mb-4">{item.data.excerpt}</p>
+            <a href={`/doctrine/${item.slug}`} class="text-bronze hover:text-white transition-colors">
+              Read Doctrine ’
+            </a>
+          </article>
+        ))}
+      </div>
+    </section>
+
+    <!-- Archive Section -->
+    <section>
+      <h2 class="text-2xl font-bold text-white mb-6 border-b border-bronze/20 pb-2">Archive Collections</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {archiveContent.map(item => (
+          <article class="bg-charcoal border border-bronze/20 p-6 hover:border-bronze transition-all duration-200">
+            <div class="text-xs text-bronze uppercase tracking-wider mb-2">Archive</div>
+            <h3 class="text-xl font-bold text-white mb-2">{item.data.title}</h3>
+            <p class="text-gray-400 text-sm mb-4">{item.data.excerpt}</p>
+            <a href={`/archive/${item.slug}`} class="text-bronze hover:text-white transition-colors">
+              Read Archive ’
+            </a>
+          </article>
+        ))}
+      </div>
+    </section>
+  </div>
+</Layout>

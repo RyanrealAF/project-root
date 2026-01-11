@@ -1,0 +1,24 @@
+{
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "tailwindCSS.includeLanguages": {
+    "astro": "HTML"
+  },
+  "emmet.includeLanguages": {
+    "astro": "html"
+  },
+  "files.associations": {
+    "*.astro": "astro"
+  },
+  "astro.validate": true,
+  "python.defaultInterpreterPath": "python3",
+  "python.terminal.activateEnvironment": true,
+  "[markdown]": {
+    "editor.wordWrap": "on",
+    "editor.quickSuggestions": {
+      "comments": "off",
+      "strings": "off",
+      "other": "off"
+    }
+  }
+}
