@@ -20,9 +20,28 @@ You can also publish from your machine:
    npm run build --prefix project-root
 
 2. Publish with Wrangler (token must be present in environment):
+   # For Cloudflare Pages (recommended for static Astro site)
+   npx wrangler pages publish ./project-root/dist --project-name purarecoveryryan
+
+   # For Workers Site (if using workers)
    npx wrangler publish
+
+## Custom domain / DNS (buildwhilebleeding.com)
+- Your domain is already using Cloudflare nameservers:
+  - `jihoon.ns.cloudflare.com`
+  - `karsyn.ns.cloudflare.com`
+
+Steps to map `buildwhilebleeding.com` to Pages:
+1. Go to Cloudflare → Pages → your Pages project (or create a new Pages project named `purarecoveryryan`).
+2. In Pages project settings → **Custom domains**, add `buildwhilebleeding.com`.
+   - Because your domain is on Cloudflare, the verification will usually be automatic.
+3. Set `buildwhilebleeding.com` as the primary domain and enable **Always use HTTPS**.
+4. For `www`, add a CNAME `www` → `purarecoveryryan.pages.dev` (or add `www.buildwhilebleeding.com` in the Pages UI).
+5. Ensure the GitHub repo has these Secrets set: `CF_API_TOKEN`, `CF_ACCOUNT_ID`.
+6. Push to `main` to trigger the GitHub Actions workflow that runs `npx wrangler pages publish`.
 
 ## Notes
 - Do NOT commit your `CF_API_TOKEN` to the repository. Always use GitHub Secrets.
-- The configured Workers subdomain is `purarecoveryryan.workers.dev` (project name: `purarecoveryryan`).
-- If you prefer Cloudflare Pages instead of a Workers Site, tell me and I will adjust the workflow to use `wrangler pages publish` instead.
+- Pages project name: `purarecoveryryan`. The Pages project will serve the site at `https://purarecoveryryan.pages.dev` until `buildwhilebleeding.com` is mapped.
+- If you prefer I can also add automatic redirects (www → root) or HSTS rules via Cloudflare settings.
+
