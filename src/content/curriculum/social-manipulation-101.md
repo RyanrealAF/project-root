@@ -1,4 +1,12 @@
-﻿Introduction: Mastering the Game
+﻿---
+title: "Know the Game: Social Manipulation 101"
+category: "curriculum"
+date: "2026-01-10"
+tags: ["curriculum","social-manipulation","training"]
+excerpt: "A practical curriculum for recognizing and countering techniques of social manipulation."
+---
+
+Introduction: Mastering the Game
 Welcome to Know the Game: Street Psychology & Social Manipulation 101. This curriculum isn’t your average textbook—it’s a raw, streetwise guide to understanding and outmaneuvering the hidden forces that twist our reality. Over the course of these modules, you’ll learn how to see through the smoke and mirrors of manipulation and reclaim control of your own narrative.
 In Module 1: The Foundation – Understanding the Game, we break down the core concepts. You’ll discover what social manipulation really is, how gaslighting and distorted narratives work, and why perception is the real battleground.
 Module 2: The Playbook – Breaking Down the Tactics dives into the specific tricks—the doppelganger setups, misdirection, and rumor weaponization—that the puppet masters use to control and confuse. This is where the hidden strings are exposed, showing you exactly how the game is rigged.

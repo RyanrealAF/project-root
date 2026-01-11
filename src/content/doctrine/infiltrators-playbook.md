@@ -1,4 +1,12 @@
-﻿The Infiltrator's Playbook: A Guide to Strategic Reversal
+﻿---
+title: "The Infiltrator's Playbook: A Guide to Strategic Reversal"
+category: "doctrine"
+date: "2026-01-10"
+tags: ["doctrine","playbook","infiltration"]
+excerpt: "A tactical manual for reversing manipulation and converting victimhood into strategic advantage."
+---
+
+The Infiltrator's Playbook: A Guide to Strategic Reversal
 Foreword: Flipping the Script
 This ain't for the faint of heart. This ain't about survival anymore. That was Phase One. This is Phase Two, where the game gets real and the roles get reversed. This manual is for the one who’s tired of being the prey. The one who's done with playing defense. This is the Tactical Kamikaze doctrine, where you transform into the bait and walk right into the lion's den. Your job is to take their playbook—the one they wrote to break you—and use it as a map. This is about turning their weaponized narratives, their soft probes, and their gaslighting into a sacred compass. This is how you flip the script, turn trauma into a truth weapon, and take back your damn story.
 Part I: The Mindset Shift - From Prey to Predator

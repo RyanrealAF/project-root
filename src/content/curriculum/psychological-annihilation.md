@@ -1,4 +1,12 @@
-﻿The Architecture of Psychological Annihilation
+﻿---
+title: "The Architecture of Psychological Annihilation"
+category: "curriculum"
+date: "2026-01-10"
+tags: ["curriculum","psychological-annihilation","theory"]
+excerpt: "An analytical exploration of the mechanisms and effects of sustained psychological warfare."
+---
+
+The Architecture of Psychological Annihilation
 ________________
 
 

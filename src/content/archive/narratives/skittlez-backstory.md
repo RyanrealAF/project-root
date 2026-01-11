@@ -1,4 +1,12 @@
-﻿Skittlez Backstory — Full, Detailed Record
+﻿---
+title: "Skittlez Backstory — Full, Detailed Record"
+category: "archive"
+date: "2026-01-10"
+tags: ["narrative","skittlez","access-agent"]
+excerpt: "A detailed account of Skittlez's involvement and role as an access agent in the documented campaigns."
+---
+
+Skittlez Backstory — Full, Detailed Record
 
 
 1) First contact and location

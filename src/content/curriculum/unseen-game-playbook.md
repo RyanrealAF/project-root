@@ -1,4 +1,12 @@
-﻿Chapter 1: The Soft Probe: Weaponizing Favors & Loyalty Tests
+﻿---
+title: "The Unseen Game Playbook: Soft Probes & Loyalty Tests"
+category: "curriculum"
+date: "2026-01-10"
+tags: ["curriculum","playbook","soft-probe"]
+excerpt: "A playbook detailing soft probes and loyalty tests as early-stage manipulative tactics."
+---
+
+Chapter 1: The Soft Probe: Weaponizing Favors & Loyalty Tests
 1.0 Introduction: The Unseen Opening Move
 This chapter initiates our deep dive into the architecture of modern manipulation, focusing on the foundational tactic known as the "soft probe" and its specialized variant, the "loyalty test." These are not merely casual interactions but meticulously designed maneuvers aimed at gathering intelligence, assessing psychological boundaries, and establishing leverage for future, more elaborate manipulative campaigns. Our objective is to equip the reader with the tools to recognize, analyze, and ultimately counter these insidious "setups".
 

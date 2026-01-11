@@ -1,8 +1,9 @@
 ---
 title: "The Game Now Seen: The Tactical Framework of Non-Kinetic Warfare"
-date: 2026-01-10
+date: "2026-01-10"
 category: "curriculum"
 tags: ["non-kinetic-warfare", "framework"]
+excerpt: "A tactical framework examining non-kinetic psychological warfare and its operational mechanics."
 ---
 
 ### Chapter 1: The Tactical Framework of Non-Kinetic Warfare

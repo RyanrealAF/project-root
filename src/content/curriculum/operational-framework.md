@@ -1,4 +1,12 @@
-﻿Chapter 1: The Operational Framework of Systematic Psychological Operations
+﻿---
+title: "The Operational Framework of Systematic Psychological Operations"
+category: "curriculum"
+date: "2026-01-10"
+tags: ["curriculum","framework","psychological-warfare"]
+excerpt: "Foundational theory and methodology for analyzing and countering systematic psychological operations."
+---
+
+Chapter 1: The Operational Framework of Systematic Psychological Operations
 This chapter establishes the theoretical and methodological underpinnings for the study of covert psychological warfare. It recontextualizes what is often misidentified as personal conflict, instead positing it as a distinct and sophisticated form of human intelligence (HUMINT) campaign. The analysis provided herein moves beyond anecdotal observation to create a formal, academic framework for understanding, documenting, and neutralizing these operations.
 1.1 The Doctrine of Covert Destabilization: Principles and Objectives
 Covert destabilization is a strategic doctrine aimed at the non-kinetic erosion of a target's societal, professional, or personal stability. Unlike overt conflict, its primary objective is not physical defeat but psychological and social incapacitation. Its reliance on plausible deniability is paramount, as it cloaks the orchestrators in ambiguity and makes direct attribution difficult. For an individual target, such as Ryan, the overarching objective is often to achieve social, financial, and sexual isolation and to limit their autonomy and choices.

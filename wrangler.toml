@@ -1,0 +1,10 @@
+name = "purarecoveryryan"
+account_id = "95f23a03d74166011160da107f74c055"
+compatibility_date = "2026-01-11"
+
+[type]
+# This project uses a Workers Site for static deployment
+
+[site]
+bucket = "./project-root/dist"
+entry-point = "workers-site"

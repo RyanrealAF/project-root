@@ -1,4 +1,12 @@
-﻿The Unseen War: Surviving Psychological Manipulation
+﻿---
+title: "The Unseen War: Surviving Psychological Manipulation"
+category: "curriculum"
+date: "2026-01-10"
+tags: ["curriculum","survival","unseen-war"]
+excerpt: "A briefing synthesizing methods and defenses for surviving coordinated psychological manipulation."
+---
+
+The Unseen War: Surviving Psychological Manipulation
 Briefing Document:
 The Unseen War - Strategic Survival Against Social Manipulation and Psychological Warfare
 Executive Summary

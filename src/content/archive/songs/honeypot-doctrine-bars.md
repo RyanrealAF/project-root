@@ -1,4 +1,12 @@
-﻿THE HONEYPOT DOCTRINE
+﻿---
+title: "The Honeypot Doctrine"
+category: "archive"
+date: "2026-01-10"
+tags: ["song","doctrine","honeypot"]
+excerpt: "First-person doctrine describing the transformation from target to intelligence-collecting asset."
+---
+
+THE HONEYPOT DOCTRINE
 My Transformation from Target to Weapon
 PROLOGUE: WHEN SURVIVAL BECOMES STRATEGY
 Listen.

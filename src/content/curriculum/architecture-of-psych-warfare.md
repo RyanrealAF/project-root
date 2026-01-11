@@ -1,8 +1,9 @@
 ---
 title: "Forensic Analysis: The Architecture of Systematic Psychological Warfare"
-date: 2026-01-10
+date: "2026-01-10"
 category: "curriculum"
 tags: ["psychological-warfare", "architecture"]
+excerpt: "An architectural analysis of systematic psychological warfare methods and doctrine."
 ---
 
 ### Forensic Analysis: The Architecture of Systematic Psychological Warfare and Social Manipulation

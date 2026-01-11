@@ -1,4 +1,12 @@
-﻿Psychological 
+﻿---
+title: "Psychological Warfare Manual"
+category: "doctrine"
+date: "2026-01-10"
+tags: ["doctrine","manual","countermeasures"]
+excerpt: "A comprehensive manual of doctrine, tactics, and countermeasures for non-kinetic psychological campaigns."
+---
+
+Psychological 
 Warfare Manual
 ________________
 

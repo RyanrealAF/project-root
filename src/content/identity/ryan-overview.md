@@ -1,4 +1,12 @@
-﻿### **I. Introduction & Thematic Overview**
+﻿---
+title: "Ryan Overview"
+category: "identity"
+date: "2025-01-10"
+tags: ["identity", "overview", "biography"]
+excerpt: "A thematic overview and deep contextual analysis of Ryan's identity, relationships, trauma, and resilience."
+---
+
+### **I. Introduction & Thematic Overview**
 
 
 This compilation integrates raw, personal notes, narrative excerpts, and academic analyses to explore the profound impact of trauma, systemic failure, love, and betrayal on Ryan's life and his enduring search for authentic connection.

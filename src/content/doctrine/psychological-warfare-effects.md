@@ -1,4 +1,12 @@
-﻿The Neurobiological Sequelae of Distributed Psychological Warfare: Analysis of Functional and Cognitive Collapse in a Case of Environmental Coercive Control
+﻿---
+title: "The Neurobiological Sequelae of Distributed Psychological Warfare"
+category: "doctrine"
+date: "2026-01-10"
+tags: ["doctrine","neuroscience","effects"]
+excerpt: "A neurobiological report on the cognitive and functional effects of sustained psychological warfare."
+---
+
+The Neurobiological Sequelae of Distributed Psychological Warfare: Analysis of Functional and Cognitive Collapse in a Case of Environmental Coercive Control
 I: Introduction and Theoretical Framework
 1.1 Contextualizing Coercive Control: Beyond Physical Confinement
 This expert report presents a comprehensive neuropsychological analysis of the effects of sustained psychological warfare on a target subject, drawing from a documented four-year campaign of coercive control executed primarily through systematic environmental manipulation. This case necessitates an updated theoretical framework for understanding control, as the methodologies employed represent a significant departure from historical models that required overt physical confinement, such as locked rooms or direct restraint.

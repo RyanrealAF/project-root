@@ -1,4 +1,12 @@
-﻿A Forensic Analysis of Jess: A Study in Relational Duality
+﻿---
+title: "A Forensic Analysis of Jess: A Study in Relational Duality"
+category: "archive"
+date: "2026-01-10"
+tags: ["forensic-analysis","narrative","jess"]
+excerpt: "A forensic analysis of the relationship dynamics and alleged patterns of manipulation involving Jess."
+---
+
+A Forensic Analysis of Jess: A Study in Relational Duality
  Updated with Recent Evidentiary Material
 
 

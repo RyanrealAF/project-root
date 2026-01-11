@@ -1,8 +1,9 @@
 ---
 title: "Breadcrumb Web: Origin Story"
-date: 2026-01-10
+date: "2026-01-10"
 category: "archive"
 tags: ["song", "script", "lyrics"]
+excerpt: "Origin story and master script for the Breadcrumb Web concept and song series."
 ---
 
 ### “Breadcrumb Web: Origin Story” (Expanded Master Script)

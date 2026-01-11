@@ -1,8 +1,9 @@
 ---
 title: "Forensic Analysis of Systematic Psychological Warfare"
-date: 2026-01-10
+date: "2026-01-10"
 category: "curriculum"
 tags: ["psychological-warfare", "forensic-analysis"]
+excerpt: "A curriculum-level forensic analysis of the mechanisms and impacts of systematic psychological warfare."
 ---
 
 ### Forensic Analysis of Systematic Psychological Warfare: Pathology, Cognitive Degradation, and Decision-Making Impairment

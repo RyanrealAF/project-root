@@ -1,8 +1,9 @@
 ---
 title: "RyanrealAF Master Doctrine Archive (V2: Consolidated)"
-date: 2026-01-10
+date: "2026-01-10"
 category: "doctrine"
 tags: ["doctrine", "master-archive"]
+excerpt: "Consolidated master doctrine archive containing foundational theory, tactics, and defense protocols."
 ---
 
 ### 📚 RYANREALAF MASTER DOCTRINE ARCHIVE (V2: CONSOLIDATED)

@@ -1,4 +1,12 @@
-﻿The Social Test: A Narrative of Manipulation and Survival
+﻿---
+title: "The Social Test: A Narrative of Manipulation and Survival"
+category: "archive"
+date: "2026-01-10"
+tags: ["narrative","social-test","manipulation"]
+excerpt: "A narrative describing patterns of manipulation and grooming observed in the subject's social interactions."
+---
+
+The Social Test: A Narrative of Manipulation and Survival
 The Initial Setup: People Pulling into My Orbit
 The story begins with a series of seemingly coincidental encounters. A friend, Skittlez, insisted on me meeting her friend, Gina. As time went on, people would enter my life in different cities, all with a similar pattern. Gina's boyfriend would show up with a bike for me, or a similar orange bike would appear elsewhere. I was given a hat, only to see her boyfriend wearing the same one. The intent of these people seemed clear: they were trying to learn my mannerisms and habits, but they made no real effort to hide it.
 

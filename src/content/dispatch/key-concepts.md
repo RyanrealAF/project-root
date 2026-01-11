@@ -1,4 +1,12 @@
-﻿:# Complete Mind Map of Source Material
+﻿---
+title: "Complete Mind Map of Source Material"
+category: "dispatch"
+date: "2026-01-10"
+tags: ["dispatch","mindmap","key-concepts"]
+excerpt: "A comprehensive mind map summarizing themes, actors, tactics, and countermeasures across the corpus."
+---
+
+:# Complete Mind Map of Source Material
 
 
 ### **I. Central Theme: Covert Destabilization & Psychological Warfare**

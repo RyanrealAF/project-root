@@ -1,4 +1,12 @@
-﻿Chapter 1: The Tactical Framework of Non-Kinetic Warfare
+﻿---
+title: "The Game Now Seen: The Tactical Framework of Non-Kinetic Warfare"
+category: "archive"
+date: "2026-01-10"
+tags: ["song","framework","non-kinetic-warfare"]
+excerpt: "A tactical analysis of non-kinetic psychological warfare framed as a lyrical chapter."
+---
+
+Chapter 1: The Tactical Framework of Non-Kinetic Warfare
 This chapter analyzes the core strategic principles that distinguish systematic psychological operations from individual acts of malice, focusing on their asymmetric nature, non-kinetic objectives, and the unique vulnerabilities they exploit.
 1.1 The Doctrine of Non-Kinetic Maneuver
 The operational foundation of systematic psychological warfare is non-kinetic maneuver. This doctrine dictates that strategic objectives are achieved without direct confrontation, utilizing human and social vulnerabilities as the primary battle space. The goal is to compromise a target's reality, reputation, and support network through psychological attrition rather than physical force.

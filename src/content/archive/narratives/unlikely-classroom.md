@@ -1,4 +1,12 @@
-﻿The Unlikely Classroom of Ryan Borland: A Study in Lived-In Wisdom
+﻿---
+title: "The Unlikely Classroom of Ryan Borland: A Study in Lived-In Wisdom"
+category: "archive"
+date: "2026-01-10"
+tags: ["narrative","education","prison"]
+excerpt: "A reflective study on the unconventional pedagogy forged through lived experience and incarceration."
+---
+
+The Unlikely Classroom of Ryan Borland: A Study in Lived-In Wisdom
 
 
 1.0 Introduction: The Teacher Who Hated School

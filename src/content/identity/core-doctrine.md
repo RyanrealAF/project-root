@@ -1,4 +1,12 @@
-﻿📚 RYANREALAF MASTER DOCTRINE ARCHIVE (V2: CONSOLIDATED)
+﻿---
+title: "RYANREALAF MASTER DOCTRINE ARCHIVE (V2: CONSOLIDATED)"
+category: "identity"
+date: "2026-01-10"
+tags: ["doctrine", "core", "archive"]
+excerpt: "Synthesis of foundational theory, tactics, and defense protocols for the Master Doctrine archive."
+---
+
+📚 RYANREALAF MASTER DOCTRINE ARCHIVE (V2: CONSOLIDATED)
 This document synthesizes the foundational theory, active development modules, and deep psychological context of the counter-intelligence curriculum into one unified archive.
 TIER 1: CORE DOCTRINE - FOUNDATIONAL THEORY, TACTICS, AND DEFENSE PROTOCOLS
 I. Foundational Doctrine and Integrity Axioms

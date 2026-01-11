@@ -1,4 +1,12 @@
-﻿Tab 1
+﻿---
+title: "A Multi-Trail Forensic Approach to Identifying Hidden Coordination"
+category: "curriculum"
+date: "2026-01-10"
+tags: ["curriculum","forensics","coordination"]
+excerpt: "A methodological framework for detecting hidden coordination across multiple streams of evidence."
+---
+
+Tab 1
  A Multi-Trail Forensic Approach to Identifying Hidden Coordination 
 Legal and Political Contexts
 

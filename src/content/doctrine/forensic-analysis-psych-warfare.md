@@ -1,4 +1,12 @@
-﻿Forensic Analysis: The Architecture of Systematic Psychological Warfare and Social Manipulation
+﻿---
+title: "Forensic Analysis: The Architecture of Systematic Psychological Warfare"
+category: "doctrine"
+date: "2026-01-10"
+tags: ["doctrine","forensic-analysis","psychological-warfare"]
+excerpt: "A doctrinal forensic analysis of coordinated psychological campaigns and their operational architecture."
+---
+
+Forensic Analysis: The Architecture of Systematic Psychological Warfare and Social Manipulation
 I. Foundational Architecture and Doctrinal Framework (The Non-Kinetic Battlefield)
 This analysis establishes the strategic and organizational blueprint for systematic psychological campaigns, which are characterized as an asymmetric threat executed through a networked human intelligence (HUMINT) unit. The foundational doctrine governing these operations is the principle of non-kinetic maneuver, designed to achieve strategic objectives without direct physical confrontation, substituting human and social vulnerabilities as the primary battlespace.
 1.1 The Doctrine of Non-Kinetic Maneuver: Objectives and Core Principles

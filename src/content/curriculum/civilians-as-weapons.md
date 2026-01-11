@@ -1,4 +1,12 @@
-﻿Civilians as Weapons: The Silent Soldiers of a Setup
+﻿---
+title: "Civilians as Weapons: The Silent Soldiers of a Setup"
+category: "curriculum"
+date: "2026-01-10"
+tags: ["curriculum","civilian-weaponization","strategy"]
+excerpt: "An analytical volume on how civilians are co-opted into disinformation and influence operations."
+---
+
+Civilians as Weapons: The Silent Soldiers of a Setup
 
 
 Abstract This volume explores the sophisticated psychological and sociopolitical strategies behind the weaponization of civilians in smear campaigns and targeted influence operations. The foundational concept of how everyday individuals—often unknowingly—are enlisted into roles of surveillance, signal-boosting, provocation, and rumor dissemination. With updated terminology, new case studies, and an interdisciplinary framing suitable for counter-disinformation professionals, educators, and psychological warfare analysts, this edition examines how perception is engineered using trusted faces and familiar voices.

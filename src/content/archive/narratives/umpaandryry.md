@@ -1,4 +1,12 @@
-﻿Chapter 1: 
+﻿---
+title: "Echoes of a Schoolyard Crush"
+category: "archive"
+date: "2026-01-10"
+tags: ["narrative","school","relationship"]
+excerpt: "A chaptered narrative exploring early relationships and their role in later dynamics."
+---
+
+Chapter 1: 
 "Echoes of a Schoolyard Crush"
 In the backdrop of our shared history, Jess and I navigated the intricate world of school, where her longstanding crush clashed with my fixation on Kandice. The corridors echoed with unspoken emotions, setting the stage for a journey beyond conventional boundaries.
 
