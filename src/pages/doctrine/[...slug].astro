@@ -1,0 +1,66 @@
+---
+import { getCollection, getEntry } from 'astro:content';
+import Content from '../../layouts/Content.astro';
+import ConceptAnchor from '../../components/ConceptAnchor.astro';
+
+export async function getStaticPaths() {
+  const doctrineEntries = await getCollection('doctrine');
+  return doctrineEntries.map(entry => ({
+    params: { slug: entry.slug },
+    props: { entry },
+  }));
+}
+
+const { entry } = Astro.props;
+const { Content: ContentComponent, headings } = await entry.render();
+---
+
+<Content title={`${entry.data.title} - RyanrealAF`} contentTitle={entry.data.title}>
+  <div class="mb-8">
+    <div class="flex items-center gap-4 text-sm text-gray-400 mb-4">
+      <span class="uppercase tracking-wider text-bronze">{entry.data.category}</span>
+      <span>•</span>
+      <span>{entry.data.date}</span>
+      {entry.data.tags && entry.data.tags.length > 0 && (
+        <>
+          <span>•</span>
+          <div class="flex gap-2">
+            {entry.data.tags.map(tag => (
+              <span class="bg-charcoal-light px-2 py-1 rounded text-xs">#{tag}</span>
+            ))}
+          </div>
+        </>
+      )}
+    </div>
+    <p class="text-xl text-gray-300 mb-6">{entry.data.excerpt}</p>
+  </div>
+
+  <div class="prose prose-lg prose-invert max-w-none">
+    <ContentComponent components={{ ConceptAnchor }} />
+  </div>
+
+  {entry.data.concepts && entry.data.concepts.length > 0 && (
+    <div class="mt-12 pt-8 border-t border-bronze/20">
+      <h3 class="text-lg font-semibold text-bronze mb-4">Key Concepts</h3>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        {entry.data.concepts.map(concept => (
+          <div class="bg-charcoal-light p-4 rounded border border-bronze/20">
+            <div class="text-bronze font-medium mb-1">{concept.phrase}</div>
+            {concept.definition && (
+              <div class="text-gray-400 text-sm mb-2">{concept.definition}</div>
+            )}
+            {concept.connections && concept.connections.length > 0 && (
+              <div class="text-xs text-gray-500">
+                Connected to: {concept.connections.join(', ')}
+              </div>
+            )}
+          </div>
+        ))}
+      </div>
+    </div>
+  )}
+
+  <div class="mt-8 pt-8 border-t border-bronze/20">
+    <a href="/doctrine" class="text-bronze hover:text-white transition-colors">← Back to Doctrine</a>
+  </div>
+</Content>

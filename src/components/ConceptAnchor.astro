@@ -1,0 +1,29 @@
+---
+// Simple wrapper for React component
+---
+
+<div class="concept-anchor-wrapper" data-id={Astro.props.id} data-phrase={Astro.props.phrase}>
+  {Astro.props.children}
+</div>
+
+<script>
+  // Hydrate React components on client
+  document.addEventListener('DOMContentLoaded', () => {
+    const wrappers = document.querySelectorAll('.concept-anchor-wrapper');
+
+    wrappers.forEach(async (wrapper) => {
+      const id = wrapper.dataset.id;
+      const phrase = wrapper.dataset.phrase;
+
+      if (id && phrase) {
+        const { default: ConceptAnchor } = await import('./ConceptAnchor.tsx');
+        const React = await import('react');
+        const { createRoot } = await import('react-dom/client');
+
+        // Create a root and render the React component
+        const root = createRoot(wrapper);
+        root.render(React.createElement(ConceptAnchor, { id, phrase }, wrapper.innerHTML));
+      }
+    });
+  });
+</script>

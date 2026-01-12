@@ -1,9 +1,38 @@
-﻿---
+---
 title: "Psychological Warfare Manual"
 category: "doctrine"
 date: "2026-01-10"
 tags: ["doctrine","manual","countermeasures"]
 excerpt: "A comprehensive manual of doctrine, tactics, and countermeasures for non-kinetic psychological campaigns."
+concepts:
+  - id: "non-kinetic-warfare"
+    phrase: "non-kinetic warfare"
+    definition: "Strategic objectives achieved without direct physical confrontation, utilizing human and social vulnerabilities as the primary battlespace."
+    connections: ["psychological-attrition", "plausible-deniability", "breadcrumb-web"]
+  - id: "psychological-attrition"
+    phrase: "psychological attrition"
+    definition: "Systematic application of stress, self-doubt, and isolation to deplete a target's cognitive and emotional resources."
+    connections: ["gaslighting", "reputation-assassination", "isolation-tactics"]
+  - id: "plausible-deniability"
+    phrase: "plausible deniability"
+    definition: "Core principle ensuring every action has an alternative, innocent explanation to grant impunity."
+    connections: ["alternative-narratives", "justification-engine", "provocation-response-framing"]
+  - id: "gaslighting"
+    phrase: "gaslighting"
+    definition: "Malicious psychological manipulation sowing seeds of doubt in a target, making them question their own memory, perception, and sanity."
+    connections: ["pathologizing-core-traits", "memory-discrepancy-amplification", "psychological-attrition"]
+  - id: "breadcrumb-web"
+    phrase: "Breadcrumb Web"
+    definition: "Systematic counter-surveillance protocol documenting suspicious interactions in a secure, timestamped log to validate experience and expose operational blueprints."
+    connections: ["attribution-proof-log", "strategic-deterrence", "deep-dive-model"]
+  - id: "reputation-assassination"
+    phrase: "reputation assassination"
+    definition: "Systematic destruction of an individual's public image, professional standing, and social credibility through fabricated or decontextualized information."
+    connections: ["resurrection-antecedent-offenses", "recontextualization-benign-interactions", "isolation-reputation-sabotage"]
+  - id: "humint-network"
+    phrase: "HUMINT network"
+    definition: "Networked human intelligence unit with tiered command-and-control structure for coordinated psychological campaigns."
+    connections: ["tier-0-architect", "tier-1-orchestrator", "access-agent"]
 ---
 
 Psychological 
@@ -14,7 +43,7 @@ ________________
 
 
 0.0 Preface: Doctrine of Non-Kinetic Warfare
-This manual serves as a comprehensive tactical guide for understanding, analyzing, and countering sophisticated psychological warfare operations. It is designed for practitioners, researchers, and protective professionals who require a deep technical understanding of coordinated manipulation. The core doctrine of this discipline is non-kinetic maneuver, which dictates that strategic objectives are achieved without direct physical confrontation, instead utilizing human and social vulnerabilities as the primary battlespace. This approach represents a contemporary evolution of conventional conflict, adapting the principles of military strategy—such as reconnaissance, maneuver, and attrition—to a psychosocial context. The ultimate objective is to compromise a target's reality, reputation, and support network through psychological attrition rather than physical force. This form of warfare is particularly insidious because it bypasses traditional legal and defensive structures, operating in the gray space of social interaction and plausible deniability. It is, at its core, a war on perception.
+This manual serves as a comprehensive tactical guide for understanding, analyzing, and countering sophisticated psychological warfare operations. It is designed for practitioners, researchers, and protective professionals who require a deep technical understanding of coordinated manipulation. The core doctrine of this discipline is <ConceptAnchor id="non-kinetic-warfare">non-kinetic maneuver</ConceptAnchor>, which dictates that strategic objectives are achieved without direct physical confrontation, instead utilizing human and social vulnerabilities as the primary battlespace. This approach represents a contemporary evolution of conventional conflict, adapting the principles of military strategy—such as reconnaissance, maneuver, and attrition—to a psychosocial context. The ultimate objective is to compromise a target's reality, reputation, and support network through <ConceptAnchor id="psychological-attrition">psychological attrition</ConceptAnchor> rather than physical force. This form of warfare is particularly insidious because it bypasses traditional legal and defensive structures, operating in the gray space of social interaction and <ConceptAnchor id="plausible-deniability">plausible deniability</ConceptAnchor>. It is, at its core, a war on perception.
 This document synthesizes lived experience with rigorous analytical deconstruction to reveal the complete operational methodology behind psychological campaigns, from initial reconnaissance to sophisticated exploitation strategies. It maintains a professional, analytical tone, using a uniform lexicon to eliminate ambiguity. The manual ensures every tactical description is supported by evidence, validated against documented case studies, providing a high-signal, low-noise resource for anyone seeking to understand or defend against these asymmetric threats.
 ________________
 

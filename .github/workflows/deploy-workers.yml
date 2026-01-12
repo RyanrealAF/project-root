@@ -23,4 +23,4 @@ jobs:
           CF_API_TOKEN: ${{ secrets.CF_API_TOKEN }}
           CF_ACCOUNT_ID: ${{ secrets.CF_ACCOUNT_ID }}
           PUBLIC_SITE_URL: "https://buildwhilebleeding.com"
-        run: npx wrangler pages publish ./project-root/dist --project-name purarecoveryryan
+        run: npx wrangler pages publish ./project-root/dist --project-name thevault

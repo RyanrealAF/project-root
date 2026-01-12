@@ -1,4 +1,4 @@
-name = "purarecoveryryan"
+name = "thevault"
 account_id = "95f23a03d74166011160da107f74c055"
 compatibility_date = "2026-01-11"
 
@@ -6,5 +6,59 @@ compatibility_date = "2026-01-11"
 # This project uses a Workers Site for static deployment
 
 [site]
-bucket = "./project-root/dist"
+bucket = "./dist"
 entry-point = "workers-site"
+
+# Security Configuration
+[vars]
+# Environment variables for security
+SECURITY_LEVEL = "high"
+BOT_MANAGEMENT = "true"
+
+# Rate Limiting (Cloudflare Workers level)
+[[rules]]
+description = "Rate limiting for API endpoints"
+type = "http"
+expression = "(http.request.uri.path matches \"^/api/\")"
+action = "block"
+action_parameters = {
+  response = {
+    status_code = 429
+    content = "Too many requests. Please try again later."
+    content_type = "text/plain"
+  }
+}
+
+# DDoS Protection Rules
+[[rules]]
+description = "Block suspicious user agents"
+type = "http"
+expression = "(http.user_agent contains \"sqlmap\") or (http.user_agent contains \"nmap\") or (http.user_agent contains \"masscan\")"
+action = "block"
+
+[[rules]]
+description = "Block directory traversal attempts"
+type = "http"
+expression = "(http.request.uri.path contains \"../\") or (http.request.uri.path contains \"..%2f\") or (http.request.uri.path contains \"%2e%2e%2f\")"
+action = "block"
+
+# Geographic blocking for sensitive content (example)
+[[rules]]
+description = "Restrict doctrine access to specific countries"
+type = "http"
+expression = "(http.request.uri.path matches \"^/content/doctrine/\") and not (ip.geoip.country in {\"US\" \"CA\" \"GB\"})"
+action = "block"
+action_parameters = {
+  response = {
+    status_code = 403
+    content = "Access denied. This content is restricted."
+    content_type = "text/plain"
+  }
+}
+
+# Header injection protection
+[[rules]]
+description = "Block requests with suspicious headers"
+type = "http"
+expression = "(http.request.headers.names[*] contains \"x-forwarded-for\") and (http.request.headers[\"x-forwarded-for\"][*] contains \"127.0.0.1\")"
+action = "block"

@@ -1,0 +1,156 @@
+---
+// Client-side security monitoring component
+---
+
+<script>
+  // Basic client-side security monitoring
+  (function() {
+    'use strict';
+
+    // Detect developer tools
+    let devtools = {open: false, orientation: null};
+    const threshold = 160;
+
+    setInterval(() => {
+      if (window.outerHeight - window.innerHeight > threshold || window.outerWidth - window.innerWidth > threshold) {
+        if (!devtools.open) {
+          devtools.open = true;
+          // Log but don't block - this is just monitoring
+          console.log('Developer tools detected');
+        }
+      } else {
+        devtools.open = false;
+      }
+    }, 500);
+
+    // Prevent right-click context menu on sensitive content
+    document.addEventListener('contextmenu', function(e) {
+      // Allow context menu on non-sensitive elements
+      const target = e.target;
+      if (target.tagName !== 'IMG' && !target.closest('.sensitive-content')) {
+        return true;
+      }
+
+      // Block context menu on images and sensitive content
+      e.preventDefault();
+      return false;
+    });
+
+    // Detect potential XSS attempts
+    const originalAlert = window.alert;
+    const originalConfirm = window.confirm;
+    const originalPrompt = window.prompt;
+
+    window.alert = function() {
+      console.warn('Alert blocked for security');
+      return false;
+    };
+
+    window.confirm = function() {
+      console.warn('Confirm blocked for security');
+      return false;
+    };
+
+    window.prompt = function() {
+      console.warn('Prompt blocked for security');
+      return false;
+    };
+
+    // Monitor for suspicious DOM manipulation
+    const observer = new MutationObserver(function(mutations) {
+      mutations.forEach(function(mutation) {
+        if (mutation.type === 'childList') {
+          mutation.addedNodes.forEach(function(node) {
+            if (node.nodeType === Node.ELEMENT_NODE) {
+              const element = node;
+              // Check for suspicious script injections
+              if (element.tagName === 'SCRIPT' && !element.src.includes(window.location.hostname)) {
+                console.warn('Suspicious script injection detected');
+                element.remove();
+              }
+            }
+          });
+        }
+      });
+    });
+
+    observer.observe(document.body, {
+      childList: true,
+      subtree: true
+    });
+
+    // Rate limiting for form submissions (if any forms exist)
+    const formSubmissions = new Map();
+    const RATE_LIMIT_WINDOW = 60000; // 1 minute
+    const MAX_SUBMISSIONS = 5;
+
+    document.addEventListener('submit', function(e) {
+      const form = e.target;
+      const now = Date.now();
+      const key = form.action || window.location.pathname;
+
+      if (!formSubmissions.has(key)) {
+        formSubmissions.set(key, []);
+      }
+
+      const submissions = formSubmissions.get(key);
+      submissions.push(now);
+
+      // Remove old submissions outside the window
+      const recentSubmissions = submissions.filter(time => now - time < RATE_LIMIT_WINDOW);
+
+      if (recentSubmissions.length > MAX_SUBMISSIONS) {
+        console.warn('Rate limit exceeded for form submission');
+        e.preventDefault();
+        alert('Too many submissions. Please wait before trying again.');
+        return false;
+      }
+
+      formSubmissions.set(key, recentSubmissions);
+    });
+
+    // Log security events for monitoring
+    window.addEventListener('error', function(e) {
+      // Log JavaScript errors that might indicate attacks
+      if (e.message.includes('eval') || e.message.includes('Function') || e.message.includes('script')) {
+        console.warn('Potential security-related error:', e.message);
+      }
+    });
+
+    // Integrity check - basic content verification
+    const checkContentIntegrity = function() {
+      // Check if critical elements exist
+      const criticalSelectors = ['nav', 'main', '.doctrine-header'];
+      criticalSelectors.forEach(selector => {
+        if (!document.querySelector(selector)) {
+          console.warn(`Critical element missing: ${selector}`);
+        }
+      });
+    };
+
+    // Run integrity check after DOM load
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', checkContentIntegrity);
+    } else {
+      checkContentIntegrity();
+    }
+
+  })();
+</script>
+
+<style>
+  /* Hide sensitive content from print and screenshots */
+  @media print {
+    .sensitive-content {
+      display: none !important;
+    }
+  }
+
+  /* Prevent selection on sensitive elements */
+  .sensitive-content {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+</style>

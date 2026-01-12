@@ -1,3 +1,41 @@
 # https://www.robotstxt.org/robotstxt.html
+# Security-focused robots.txt - restrict access to sensitive doctrine content
+
+# Allow general crawling but block sensitive content
 User-agent: *
-Disallow:
+Disallow: /content/doctrine/
+Disallow: /content/archive/
+Disallow: /dispatch/
+Allow: /
+
+# Block all AI crawlers from sensitive content
+User-agent: GPTBot
+Disallow: /
+
+User-agent: ChatGPT-User
+Disallow: /
+
+User-agent: Google-Extended
+Disallow: /
+
+User-agent: CCBot
+Disallow: /
+
+User-agent: anthropic-ai
+Disallow: /
+
+# Allow search engines but discourage indexing of sensitive content
+User-agent: Googlebot
+Crawl-delay: 10
+Disallow: /content/doctrine/
+Disallow: /content/archive/
+Disallow: /dispatch/
+
+User-agent: Bingbot
+Crawl-delay: 10
+Disallow: /content/doctrine/
+Disallow: /content/archive/
+Disallow: /dispatch/
+
+# Sitemap
+Sitemap: https://buildwhilebleeding.com/sitemap.xml

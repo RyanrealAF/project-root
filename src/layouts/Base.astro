@@ -1,6 +1,7 @@
----
 // src/layouts/Base.astro
 import Navigation from '../components/Navigation.astro';
+import SecurityScript from '../components/SecurityScript.astro';
+import GraphManager from '../components/GraphManager';
 const { title } = Astro.props;
 ---
 <!doctype html>
@@ -11,6 +12,18 @@ const { title } = Astro.props;
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
   <meta name="generator" content={Astro.generator} />
+
+  <!-- Security Meta Tags -->
+  <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+  <meta http-equiv="X-Frame-Options" content="DENY" />
+  <meta http-equiv="X-XSS-Protection" content="1; mode=block" />
+  <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin" />
+  <meta name="robots" content="noindex, nofollow" />
+
+  <!-- Additional Security Headers -->
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="msapplication-tap-highlight" content="no" />
+
   <title>{title}</title>
 </head>
 <body>
@@ -25,5 +38,11 @@ const { title } = Astro.props;
     @import '../styles/global.css';
     @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
   </style>
+
+  <!-- Security Monitoring -->
+  <SecurityScript />
+
+  <!-- Knowledge Graph Manager -->
+  <GraphManager client:load />
 </body>
 </html>
